@@ -1,69 +1,137 @@
-# React + TypeScript + Vite
+# 🚀 MERN Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS, showcasing my journey as a full-stack developer with a passion for creating meaningful digital experiences.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **Modern Design**: Clean, professional design with dark theme and gradient accents
+-   **Responsive Layout**: Fully responsive across all devices and screen sizes
+-   **Interactive Elements**: Smooth animations, hover effects, and transitions
+-   **TypeScript**: Type-safe code for better development experience
+-   **Performance Optimized**: Fast loading and smooth user experience
+-   **SEO Friendly**: Proper meta tags and semantic HTML structure
+-   **Accessibility**: WCAG compliant with proper contrast and keyboard navigation
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   **Frontend**: React 18, TypeScript, Tailwind CSS
+-   **Icons**: Lucide React
+-   **Build Tool**: Vite
+-   **Deployment**: Vercel
+-   **Version Control**: Git & GitHub
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── sections/
+│   │   │   ├── Hero.tsx
+│   │   │   ├── About.tsx
+│   │   │   ├── Services.tsx
+│   │   │   ├── Projects.tsx
+│   │   │   ├── Contact.tsx
+│   │   │   └── Footer.tsx
+│   │   ├── layout/
+│   │   │   └── Navigation.tsx
+│   ├── types/
+│   │   ├── index.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── .env.example
+├── .gitignore
+├── package.json
+├── index.html
+├── tsconfig.json
+├── tailwind.config.js
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+-   Node.js (v18 or higher)
+-   npm or yarn
+-   Git
+
+### Installation
+
+1. **Clone the repository**
+
+    ```bash
+    git clone https://github.com/yourusername/portfolio.git
+    cd portfolio
+    ```
+
+2. **Install dependencies**
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3. **Start the development server**
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
+
+## 🎨 Customization
+
+### Styling
+
+The website uses Tailwind CSS for styling. You can customize the theme in `tailwind.config.js`:
+
+```javascript
+module.exports = {
+	theme: {
+		extend: {
+			colors: {
+				primary: {
+					50: "#eff6ff",
+					500: "#3b82f6",
+					900: "#1e3a8a",
+				},
+			},
+			fontFamily: {
+				sans: ["Inter", "sans-serif"],
+			},
+		},
+	},
+};
 ```
+
+## 🌟 Performance Optimization
+
+-   **Code Splitting**: Components are lazy-loaded for better performance
+-   **Image Optimization**: Images are optimized and lazy-loaded
+-   **Bundle Analysis**: Use `npm run build -- --analyze` to analyze bundle size
+-   **SEO**: Proper meta tags and structured data
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+-   [React](https://reactjs.org/) - The web framework used
+-   [Tailwind CSS](https://tailwindcss.com/) - For styling
+-   [Lucide React](https://lucide.dev/) - For icons
+-   [Vercel](https://vercel.com/) - For deployment
+
+---
+
+**Built with ❤️ by [Shedrack Okunda]**
+
+_"Crafting digital experiences with passion and purpose"_
