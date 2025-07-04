@@ -1,9 +1,4 @@
-import {
-	Database,
-	Globe,
-	Palette,
-	Server,
-} from "lucide-react";
+import { Database, Globe, Palette, Server } from "lucide-react";
 import type { Service } from "../types";
 
 export const services: Service[] = [
@@ -14,7 +9,7 @@ export const services: Service[] = [
 			"Complete web applications built with the MERN stack, delivering seamless user experiences and robust backend solutions.",
 		icon: <Server className="w-8 h-8" />,
 		features: [
-			"React/Next.js Frontend",
+			"React Frontend",
 			"Node.js/Express Backend",
 			"MongoDB Database",
 			"RESTful APIs",

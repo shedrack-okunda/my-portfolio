@@ -44,10 +44,9 @@ export const About = () => {
 								When I'm not coding, you'll find me behind a
 								drum set finding rhythm and inspiration,
 								exploring new roads while driving, or diving
-								deep into Linux systems. I believe that worship
-								and technology can beautifully intersect to
-								create something greater than the sum of their
-								parts.
+								deep into Linux systems. I believe that
+								technology can beautifully intersect in our day
+								to day life and create something greater.
 							</p>
 
 							<div className="grid grid-cols-2 gap-4 mt-8">

@@ -12,7 +12,7 @@ export const Projects = () => {
 			title: "ECommerce Platform",
 			description:
 				"Full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.",
-			technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
+			technologies: ["React", "Node.js", "MongoDB", "JWT"],
 			imageUrl:
 				"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
 			githubUrl: "https://github.com/yourusername/ecommerce",
@@ -54,24 +54,6 @@ export const Projects = () => {
 			githubUrl: "https://github.com/yourusername/taskmanager",
 			liveUrl: "https://taskmanager-demo.vercel.app",
 			category: "fullstack",
-		},
-		{
-			id: "4",
-			title: "Fitness Tracking App",
-			description:
-				"Mobile-first fitness application with workout tracking, progress analytics, and social features.",
-			technologies: [
-				"React Native",
-				"Firebase",
-				"Redux",
-				"Charts",
-				"Push Notifications",
-			],
-			imageUrl:
-				"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
-			githubUrl: "https://github.com/yourusername/fitness",
-			liveUrl: "https://fitness-demo.vercel.app",
-			category: "mobile",
 		},
 	];
 
