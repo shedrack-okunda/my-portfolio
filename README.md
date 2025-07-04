@@ -1,4 +1,4 @@
-# 🚀 MERN Stack Developer Portfolio
+# 🚀 Portfolio
 
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS, showcasing my journey as a full-stack developer with a passion for creating meaningful digital experiences.
 
@@ -92,25 +92,6 @@ portfolio/
 ### Styling
 
 The website uses Tailwind CSS for styling. You can customize the theme in `tailwind.config.js`:
-
-```javascript
-module.exports = {
-	theme: {
-		extend: {
-			colors: {
-				primary: {
-					50: "#eff6ff",
-					500: "#3b82f6",
-					900: "#1e3a8a",
-				},
-			},
-			fontFamily: {
-				sans: ["Inter", "sans-serif"],
-			},
-		},
-	},
-};
-```
 
 ## 🌟 Performance Optimization
 
