@@ -1,4 +1,4 @@
-import { ChevronDown, Code, Github, Linkedin, Mail } from "lucide-react";
+import { Code, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
 
 export const Hero = () => {
@@ -78,10 +78,6 @@ export const Hero = () => {
 							</a>
 						</div>
 					</div>
-				</div>
-
-				<div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce">
-					<ChevronDown className="w-8 h-8 text-slate-400" />
 				</div>
 			</section>
 		</>
