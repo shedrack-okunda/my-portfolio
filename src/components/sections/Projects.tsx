@@ -3,6 +3,7 @@ import type { Project } from "../../types";
 import React from "react";
 
 export const Projects = () => {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [selectedProject, setSelectedProject] =
 		React.useState<Project | null>(null);
 

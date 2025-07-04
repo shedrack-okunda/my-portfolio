@@ -2,7 +2,10 @@ import { Code, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
 
 export const Hero = () => {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [currentSection, setCurrentSection] = React.useState("hero");
 
 	const scrollToSection = (sectionId: string) => {
