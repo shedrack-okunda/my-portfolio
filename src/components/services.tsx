@@ -1,12 +1,10 @@
-import { Database, Globe, Palette, Server, Smartphone, Zap } from "lucide-react";
-
-interface Service {
-	id: string;
-	title: string;
-	description: string;
-	icon: React.ReactNode;
-	features: string[];
-}
+import {
+	Database,
+	Globe,
+	Palette,
+	Server,
+} from "lucide-react";
+import type { Service } from "../types";
 
 export const services: Service[] = [
 	{
@@ -51,20 +49,7 @@ export const services: Service[] = [
 			"DevOps & CI/CD",
 		],
 	},
-	{
-		id: "4",
-		title: "Mobile Development",
-		description:
-			"Cross-platform mobile applications using React Native for iOS and Android.",
-		icon: <Smartphone className="w-8 h-8" />,
-		features: [
-			"React Native",
-			"Cross-platform",
-			"Native Performance",
-			"App Store Deployment",
-			"Push Notifications",
-		],
-	},
+
 	{
 		id: "5",
 		title: "Web Consulting",
@@ -77,20 +62,6 @@ export const services: Service[] = [
 			"Performance Audit",
 			"Technology Selection",
 			"Team Mentoring",
-		],
-	},
-	{
-		id: "6",
-		title: "DevOps & Deployment",
-		description:
-			"Streamlined deployment pipelines and infrastructure management for optimal performance.",
-		icon: <Zap className="w-8 h-8" />,
-		features: [
-			"CI/CD Pipelines",
-			"Docker Containers",
-			"Cloud Hosting",
-			"Monitoring & Analytics",
-			"Security Implementation",
 		],
 	},
 ];
