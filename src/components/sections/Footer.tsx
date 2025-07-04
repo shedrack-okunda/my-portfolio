@@ -7,11 +7,11 @@ export const Footer = () => {
 				<div className="container mx-auto px-6">
 					<div className="text-center">
 						<div className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-							Portfolio
+							Shedrack Okunda
 						</div>
 						<p className="text-slate-400 mb-6">
 							Crafting digital experiences with passion and
-							purpose
+							purpose.
 						</p>
 						<div className="flex justify-center space-x-6 mb-6">
 							<a
