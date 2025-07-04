@@ -2,11 +2,11 @@ import { Code, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
 
 export const Hero = () => {
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+	console.log(isMenuOpen);
 
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [currentSection, setCurrentSection] = React.useState("hero");
+	console.log(currentSection);
 
 	const scrollToSection = (sectionId: string) => {
 		setCurrentSection(sectionId);
