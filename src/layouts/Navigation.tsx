@@ -34,7 +34,11 @@ export const Navigation = () => {
 								<button
 									key={item}
 									onClick={() => scrollToSection(item)}
-									className="capitalize hover:text-blue-400 transition-colors duration-200">
+									className={`capitalize hover:text-blue-400 transition-colors duration-200 ${
+										currentSection === item
+											? "text-blue-400"
+											: "hover:text-blue-400"
+									}`}>
 									{item}
 								</button>
 							))}
@@ -78,7 +82,11 @@ export const Navigation = () => {
 								<button
 									key={item}
 									onClick={() => scrollToSection(item)}
-									className="block w-full text-left py-2 capitalize hover:text-blue-400 transition-colors duration-200">
+									className={`block w-full text-left py-2 capitalize hover:text-blue-400 transition-colors duration-200 ${
+										currentSection === item
+											? "text-blue-400"
+											: "hover:text-blue-400"
+									}`}>
 									{item}
 								</button>
 							))}
