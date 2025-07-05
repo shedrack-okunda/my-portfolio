@@ -6,7 +6,7 @@ export interface Project {
 	imageUrl: string;
 	githubUrl: string;
 	liveUrl: string;
-	category: "fullstack" | "frontend" | "backend" | "mobile";
+	category: "fullstack" | "frontend" | "backend";
 }
 
 export interface Service {
