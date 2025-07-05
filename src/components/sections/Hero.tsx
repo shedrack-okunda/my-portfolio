@@ -1,4 +1,4 @@
-import { Code, Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
 
 export const Hero = () => {
@@ -28,18 +28,25 @@ export const Hero = () => {
 				<div className="container mx-auto px-6 relative z-10">
 					<div className="text-center max-w-4xl mx-auto">
 						<div className="mb-8">
-							<div className="w-32 h-32 mx-auto mt-10 mb-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1">
+							<div className="w-32 h-32 mx-auto mt-6 mb-5 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1">
 								<div className="w-full h-full rounded-full bg-slate-950 flex items-center justify-center">
-									<Code className="w-16 h-16 text-blue-400" />
+									<img
+										src="/images/sheddy.webp"
+										className="rounded-full "
+									/>
 								</div>
 							</div>
 						</div>
 
-						<h1 className="text-5xl md:text-7xl font-bold mb-6">
+						<h1 className="text-5xl md:text-7xl font-bold mb-5">
 							<span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-								Full-Stack Developer
+								Shedrack Okunda
 							</span>
 						</h1>
+
+						<h2 className="text-2xl mb-1 font-semibold text-slate-200">
+							Full-Stack Developer
+						</h2>
 
 						<p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
 							Passionate MERN stack developer crafting digital
