@@ -10,52 +10,52 @@ export const Projects = () => {
 	const projects: Project[] = [
 		{
 			id: "1",
-			title: "ECommerce Platform",
+			title: "Modern Business Landing Page",
 			description:
-				"Full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.",
-			technologies: ["React", "Node.js", "MongoDB", "JWT"],
-			imageUrl:
-				"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-			githubUrl: "https://github.com/yourusername/ecommerce",
-			liveUrl: "https://ecommerce-demo.vercel.app",
-			category: "fullstack",
+				"A sleek, responsive business website built to showcase modern UI principles using React, Tailwind CSS, and TypeScript. Fully mobile-optimized with clean component architecture.",
+			technologies: ["React", "TypeScript", "Tailwindcss"],
+			imageUrl: "/images/unity.png",
+			githubUrl:
+				"https://github.com/shedrack-okunda/Unity-HomeCare-Services",
+			liveUrl: "https://unity-home-care-services.vercel.app/",
+			category: "frontend",
 		},
-		{
-			id: "2",
-			title: "Real Estate App",
-			description:
-				"Property listing platform with advanced search, virtual tours, and agent management system.",
-			technologies: [
-				"React",
-				"TypeScript",
-				"Express",
-				"PostgreSQL",
-				"AWS",
-			],
-			imageUrl:
-				"https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
-			githubUrl: "https://github.com/yourusername/realestate",
-			liveUrl: "https://realestate-demo.vercel.app",
-			category: "fullstack",
-		},
-		{
-			id: "3",
-			title: "Task Management Dashboard",
-			description:
-				"Collaborative project management tool with real-time updates, team collaboration, and analytics.",
-			technologies: [
-				"React",
-				"Socket.io",
-				"Node.js",
-				"MongoDB",
-				"Chart.js",
-			],
-			imageUrl:
-				"https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-			githubUrl: "https://github.com/yourusername/taskmanager",
-			liveUrl: "https://taskmanager-demo.vercel.app",
-			category: "fullstack",
-		},
+		// {
+		// 	id: "2",
+		// 	title: "Real Estate App",
+		// 	description:
+		// 		"Property listing platform with advanced search, virtual tours, and agent management system.",
+		// 	technologies: [
+		// 		"React",
+		// 		"TypeScript",
+		// 		"Express",
+		// 		"PostgreSQL",
+		// 		"AWS",
+		// 	],
+		// 	imageUrl:
+		// 		"https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+		// 	githubUrl: "https://github.com/yourusername/realestate",
+		// 	liveUrl: "https://realestate-demo.vercel.app",
+		// 	category: "fullstack",
+		// },
+		// {
+		// 	id: "3",
+		// 	title: "Task Management Dashboard",
+		// 	description:
+		// 		"Collaborative project management tool with real-time updates, team collaboration, and analytics.",
+		// 	technologies: [
+		// 		"React",
+		// 		"Socket.io",
+		// 		"Node.js",
+		// 		"MongoDB",
+		// 		"Chart.js",
+		// 	],
+		// 	imageUrl:
+		// 		"https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+		// 	githubUrl: "https://github.com/yourusername/taskmanager",
+		// 	liveUrl: "https://taskmanager-demo.vercel.app",
+		// 	category: "fullstack",
+		// },
 	];
 
 	return (
