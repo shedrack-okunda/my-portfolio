@@ -1,11 +1,11 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 
-export const Hero = () => {
-	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+const Hero: React.FC = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	console.log(isMenuOpen);
 
-	const [currentSection, setCurrentSection] = React.useState("hero");
+	const [currentSection, setCurrentSection] = useState("hero");
 	console.log(currentSection);
 
 	const scrollToSection = (sectionId: string) => {
@@ -57,7 +57,7 @@ export const Hero = () => {
 							</span>{" "}
 						</p>
 
-						<div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+						<div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
 							<button
 								onClick={() => scrollToSection("projects")}
 								className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-200 transform hover:scale-105">
@@ -93,3 +93,5 @@ export const Hero = () => {
 		</>
 	);
 };
+
+export default Hero;

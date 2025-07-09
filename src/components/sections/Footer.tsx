@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import type React from "react";
 
-export const Footer = () => {
+const Footer: React.FC = () => {
 	return (
 		<>
 			<footer className="py-12 bg-slate-900 border-t border-slate-800">
@@ -31,8 +32,7 @@ export const Footer = () => {
 							</a>
 						</div>
 						<p className="text-slate-500 text-sm">
-							© 2025 Shedrack Okunda. Built with React,
-							TypeScript, and Tailwind CSS.
+							© 2025 Shedrack Okunda. All Right Reserved.
 						</p>
 					</div>
 				</div>
@@ -40,3 +40,5 @@ export const Footer = () => {
 		</>
 	);
 };
+
+export default Footer;

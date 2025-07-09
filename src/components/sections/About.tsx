@@ -1,7 +1,38 @@
-import { Code } from "lucide-react";
-import { passions } from "../passions";
+import { Car, Code, Heart, Mountain, Music } from "lucide-react";
+import type React from "react";
 
-export const About = () => {
+const About: React.FC = () => {
+	const passions = [
+		{
+			icon: <Code className="w-6 h-6" />,
+			title: "Full-Stack Development",
+			description:
+				"Crafting scalable web applications with modern technologies",
+		},
+		{
+			icon: <Car className="w-6 h-6" />,
+			title: "Driving Adventures",
+			description:
+				"Exploring new horizons and finding inspiration on the road",
+		},
+		{
+			icon: <Music className="w-6 h-6" />,
+			title: "Drumming",
+			description: "Finding rhythm and creativity through percussion",
+		},
+		{
+			icon: <Mountain className="w-6 h-6" />,
+			title: "Linux Enthusiast",
+			description:
+				"Embracing open-source philosophy and system optimization",
+		},
+		{
+			icon: <Heart className="w-6 h-6" />,
+			title: "Kingdom Minded",
+			description: "Living with purpose and spiritual conviction",
+		},
+	];
+
 	return (
 		<>
 			<section id="about" className="py-20 bg-slate-900/50">
@@ -75,3 +106,5 @@ export const About = () => {
 		</>
 	);
 };
+
+export default About;

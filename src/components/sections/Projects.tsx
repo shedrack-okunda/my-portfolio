@@ -2,11 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 import type { Project } from "../../types";
 import React from "react";
 
-export const Projects = () => {
-	const [selectedProject, setSelectedProject] =
-		React.useState<Project | null>(null);
-	console.log(selectedProject, setSelectedProject);
-
+const Projects: React.FC = () => {
 	const projects: Project[] = [
 		{
 			id: "1",
@@ -20,42 +16,6 @@ export const Projects = () => {
 			liveUrl: "https://unity-home-care-services.vercel.app/",
 			category: "frontend",
 		},
-		// {
-		// 	id: "2",
-		// 	title: "Real Estate App",
-		// 	description:
-		// 		"Property listing platform with advanced search, virtual tours, and agent management system.",
-		// 	technologies: [
-		// 		"React",
-		// 		"TypeScript",
-		// 		"Express",
-		// 		"PostgreSQL",
-		// 		"AWS",
-		// 	],
-		// 	imageUrl:
-		// 		"https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
-		// 	githubUrl: "https://github.com/yourusername/realestate",
-		// 	liveUrl: "https://realestate-demo.vercel.app",
-		// 	category: "fullstack",
-		// },
-		// {
-		// 	id: "3",
-		// 	title: "Task Management Dashboard",
-		// 	description:
-		// 		"Collaborative project management tool with real-time updates, team collaboration, and analytics.",
-		// 	technologies: [
-		// 		"React",
-		// 		"Socket.io",
-		// 		"Node.js",
-		// 		"MongoDB",
-		// 		"Chart.js",
-		// 	],
-		// 	imageUrl:
-		// 		"https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-		// 	githubUrl: "https://github.com/yourusername/taskmanager",
-		// 	liveUrl: "https://taskmanager-demo.vercel.app",
-		// 	category: "fullstack",
-		// },
 	];
 
 	return (
@@ -81,7 +41,7 @@ export const Projects = () => {
 										<img
 											src={project.imageUrl}
 											alt={project.title}
-											className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+											className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
 										/>
 										<div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
 										<div className="absolute top-4 right-4">
@@ -136,3 +96,5 @@ export const Projects = () => {
 		</>
 	);
 };
+
+export default Projects;

@@ -1,9 +1,8 @@
-import { Code } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 
-export const Navigation = () => {
-	const [currentSection, setCurrentSection] = React.useState("hero");
-	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+const Navigation: React.FC = () => {
+	const [currentSection, setCurrentSection] = useState("hero");
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const scrollToSection = (sectionId: string) => {
 		setCurrentSection(sectionId);
@@ -22,8 +21,6 @@ export const Navigation = () => {
 						<div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent hover: cursor-pointer">
 							Sheddy
 						</div>
-
-						<Code className="w-8 h-8 text-blue-400 hover: cursor-pointer" />
 
 						{/* Desktop Menu */}
 						<div className="hidden md:flex items-center space-x-8">
@@ -100,3 +97,5 @@ export const Navigation = () => {
 		</>
 	);
 };
+
+export default Navigation;

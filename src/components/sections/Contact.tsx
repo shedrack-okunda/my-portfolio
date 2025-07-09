@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import type React from "react";
 
-export const Contact = () => {
+const Contact: React.FC = () => {
 	return (
 		<>
 			<section id="contact" className="py-20">
@@ -115,3 +116,5 @@ export const Contact = () => {
 		</>
 	);
 };
+
+export default Contact;
