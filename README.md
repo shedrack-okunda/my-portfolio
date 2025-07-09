@@ -113,6 +113,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by [Shedrack Okunda]**
+**Built with ❤️ by Shedrack Okunda**
 
 _"Crafting digital experiences with passion and purpose"_
