@@ -16,6 +16,24 @@ const Projects: React.FC = () => {
 			liveUrl: "https://unity-home-care-services.vercel.app/",
 			category: "frontend",
 		},
+		{
+			id: "2",
+			title: "EduConnect - Online Learning Platform",
+			description:
+				"Bright, engaging online learning platform connecting students and educators. Features course management, interactive lessons, and progress tracking.",
+			technologies: [
+				"React",
+				"Node.js",
+				"Express",
+				"MongoDB",
+				"Tailwindcss",
+				"TypeScript",
+			],
+			imageUrl: "/images/educonnect.png",
+			githubUrl: "https://github.com/shedrack-okunda/EduConnect.git",
+			liveUrl: "https://edu-connect-orcin.vercel.app/",
+			category: "fullstack",
+		},
 	];
 
 	return (

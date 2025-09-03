@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
 		<>
 			<section
 				id="home"
-				className="min-h-screen flex items-center justify-center relative overflow-hidden">
+				className="min-h-screen flex items-center justify-center relative overflow-hidden mt-5">
 				<div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900"></div>
 				<div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_50%)]"></div>
 
