@@ -1,5 +1,3 @@
-import type { LucideIcon } from "lucide-react";
-
 export interface Project {
 	id: number | string;
 	title: string;
@@ -15,6 +13,6 @@ export interface Service {
 	id: string;
 	title: string;
 	description: string;
-	icon: LucideIcon;
+	icon: React.ReactNode;
 	features: string[];
 }
