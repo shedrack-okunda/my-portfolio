@@ -1,4 +1,6 @@
-# 🚀 Portfolio
+# 🚀 My Portfolio
+
+[Live Demo] https://shedrack-okunda.vercel.app/
 
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS, showcasing my journey as a full-stack developer with a passion for creating meaningful digital experiences.
 
@@ -26,18 +28,18 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 portfolio/
 ├── public/
 ├── src/
+|   ├── assets
 │   ├── components/
+|   |   ├── ui/
 │   │   ├── sections/
-│   │   │   ├── Hero.tsx
-│   │   │   ├── About.tsx
-│   │   │   ├── Services.tsx
-│   │   │   ├── Projects.tsx
-│   │   │   ├── Contact.tsx
-│   │   │   └── Footer.tsx
-│   │   ├── layout/
-│   │   │   └── Navigation.tsx
+|   |   ├── common
+│   ├── layout/
+|   ├── pages/
+|   ├── hooks/
+|   ├── lib/
 │   ├── types/
-│   │   ├── index.ts
+|   ├── config/
+|   ├── styles/
 │   ├── App.tsx
 │   ├── main.tsx
 │   └── vite-env.d.ts
@@ -110,6 +112,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 -   [Tailwind CSS](https://tailwindcss.com/) - For styling
 -   [Lucide React](https://lucide.dev/) - For icons
 -   [Vercel](https://vercel.com/) - For deployment
+
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![React](https://img.shields.io/badge/React-18-blue)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-3-blueviolet)
 
 ---
 

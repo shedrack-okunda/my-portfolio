@@ -1,5 +1,5 @@
-import { Github, Linkedin, Mail } from "lucide-react";
 import React, { useState } from "react";
+import { SOCIAL_LINKS } from "../../config/socials";
 
 const Hero: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
 		<>
 			<section
 				id="home"
-				className="min-h-screen flex items-center justify-center relative overflow-hidden mt-5">
+				className="min-h-screen flex items-center justify-center relative overflow-hidden mt-6">
 				<div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900"></div>
 				<div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_50%)]"></div>
 
@@ -71,21 +71,18 @@ const Hero: React.FC = () => {
 						</div>
 
 						<div className="flex justify-center space-x-6">
-							<a
-								href="https://github.com/yourusername"
-								className="text-slate-400 hover:text-white transition-colors duration-200">
-								<Github className="w-6 h-6" />
-							</a>
-							<a
-								href="https://linkedin.com/in/yourusername"
-								className="text-slate-400 hover:text-white transition-colors duration-200">
-								<Linkedin className="w-6 h-6" />
-							</a>
-							<a
-								href="mailto:your.email@example.com"
-								className="text-slate-400 hover:text-white transition-colors duration-200">
-								<Mail className="w-6 h-6" />
-							</a>
+							{SOCIAL_LINKS.map(
+								({ id, href, icon: Icon, label }) => (
+									<a
+										key={id}
+										href={href}
+										aria-label={label}
+										target="_blank"
+										className="text-slate-400 hover:text-white transition-colors">
+										<Icon className="w-6 h-6" />
+									</a>
+								)
+							)}
 						</div>
 					</div>
 				</div>
