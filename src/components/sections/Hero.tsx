@@ -18,6 +18,7 @@ const Hero: React.FC = () => {
 						initial={{ scale: 0, opacity: 0 }}
 						animate={{ scale: 1, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ once: true }}
 						className="mb-8">
 						<div className="w-32 h-32 mx-auto mt-6 mb-5 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1">
 							<div className="w-full h-full rounded-full bg-slate-950 flex items-center justify-center">
@@ -37,6 +38,7 @@ const Hero: React.FC = () => {
 					<motion.h1
 						initial={{ y: 40, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
+						viewport={{ once: true }}
 						transition={{ duration: 0.8, delay: 0.3 }}
 						className="text-4xl md:text-6xl font-bold mb-5">
 						<span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 bg-clip-text text-transparent">
@@ -49,6 +51,7 @@ const Hero: React.FC = () => {
 						initial={{ y: 40, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ duration: 0.8, delay: 0.5 }}
+						viewport={{ once: true }}
 						className="text-2xl mb-1 font-semibold text-slate-200">
 						Full-Stack Developer
 						<br />• MERN | TypeScript | Tailwind
@@ -59,6 +62,7 @@ const Hero: React.FC = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 0.8, delay: 0.7 }}
+						viewport={{ once: true }}
 						className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
 						Passionate MERN stack developer crafting digital
 						experiences with purpose and excellence.
@@ -72,6 +76,7 @@ const Hero: React.FC = () => {
 					<motion.div
 						initial={{ y: 20, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
+						viewport={{ once: true }}
 						transition={{ duration: 0.8, delay: 0.9 }}
 						className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
 						<a
@@ -90,6 +95,7 @@ const Hero: React.FC = () => {
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
+						viewport={{ once: true }}
 						transition={{ duration: 0.8, delay: 1.1 }}
 						className="flex justify-center space-x-6">
 						{SOCIAL_LINKS.map(({ id, href, icon: Icon, label }) => (
