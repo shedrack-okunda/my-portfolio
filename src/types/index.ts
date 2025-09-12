@@ -9,10 +9,4 @@ export interface Project {
 	category: "fullstack" | "frontend" | "backend";
 }
 
-export interface Service {
-	id: string;
-	title: string;
-	description: string;
-	icon: React.ReactNode;
-	features: string[];
-}
+
