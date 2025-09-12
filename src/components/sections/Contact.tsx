@@ -1,6 +1,6 @@
-import { Mail, MapPin, Phone } from "lucide-react";
 import type React from "react";
 import { motion, type Variants } from "framer-motion";
+import { PERSONAL_INFO } from "../../config/personal";
 
 const containerVariants: Variants = {
 	hidden: {},
@@ -15,15 +15,6 @@ const itemVariants: Variants = {
 		opacity: 1,
 		y: 0,
 		transition: { type: "spring", stiffness: 70, damping: 15 },
-	},
-};
-
-const formVariants: Variants = {
-	hidden: { opacity: 0, scale: 0.95 },
-	visible: {
-		opacity: 1,
-		scale: 1,
-		transition: { duration: 0.5, ease: "easeOut" },
 	},
 };
 
@@ -48,31 +39,16 @@ const Contact: React.FC = () => {
 				</motion.div>
 
 				<div className="max-w-4xl mx-auto">
-					<div className="grid md:grid-cols-2 gap-12">
-						{/* Contact Info */}
-						<motion.div
-							variants={containerVariants}
-							initial="hidden"
-							whileInView="visible"
-							viewport={{ once: true, amount: 0.2 }}
-							className="space-y-8">
-							{[
-								{
-									icon: Mail,
-									title: "Email",
-									detail: "okundashedrack@gmail.com",
-								},
-								{
-									icon: Phone,
-									title: "Phone",
-									detail: "+254 720 260 412",
-								},
-								{
-									icon: MapPin,
-									title: "Nairobi, Kenya",
-									detail: "Available for remote work",
-								},
-							].map(({ icon: Icon, title, detail }, i) => (
+					{/* <div className="grid md:grid-cols-2 gap-12"> */}
+					{/* Contact Info */}
+					<motion.div
+						variants={containerVariants}
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true, amount: 0.2 }}
+						className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-8 gap-6">
+						{PERSONAL_INFO.map(
+							({ icon: Icon, title, detail }, i) => (
 								<motion.div
 									key={i}
 									variants={itemVariants}
@@ -89,73 +65,10 @@ const Contact: React.FC = () => {
 										</p>
 									</div>
 								</motion.div>
-							))}
-						</motion.div>
-
-						{/* Contact Form */}
-						<motion.div
-							variants={formVariants}
-							initial="hidden"
-							whileInView="visible"
-							viewport={{ once: true, amount: 0.2 }}
-							className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700">
-							<form
-								className="space-y-6"
-								aria-label="Contact form">
-								<div>
-									<label
-										htmlFor="name"
-										className="block text-sm font-medium mb-2">
-										Name
-									</label>
-									<input
-										type="text"
-										id="name"
-										className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-										placeholder="Your Name"
-										required
-									/>
-								</div>
-
-								<div>
-									<label
-										htmlFor="email"
-										className="block text-sm font-medium mb-2">
-										Email
-									</label>
-									<input
-										type="email"
-										id="email"
-										className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-										placeholder="your.email@example.com"
-										required
-									/>
-								</div>
-
-								<div>
-									<label
-										htmlFor="message"
-										className="block text-sm font-medium mb-2">
-										Message
-									</label>
-									<textarea
-										id="message"
-										rows={4}
-										className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-										placeholder="Tell me about your project..."
-										required></textarea>
-								</div>
-
-								<motion.button
-									type="submit"
-									whileHover={{ scale: 1.05 }}
-									whileTap={{ scale: 0.97 }}
-									className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-200">
-									Send Message
-								</motion.button>
-							</form>
-						</motion.div>
-					</div>
+							)
+						)}
+					</motion.div>
+					{/* </div> */}
 				</div>
 			</div>
 		</section>
