@@ -5,7 +5,13 @@ import { motion } from "framer-motion";
 
 const About: React.FC = () => {
 	return (
-		<section id="about" className="py-20 bg-slate-900/50">
+		<motion.section
+			id="about"
+			className="py-20 bg-slate-900/50"
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			viewport={{ once: true, amount: 0.2 }}
+			transition={{ duration: 0.6 }}>
 			<div className="container mx-auto px-6">
 				{/* Heading */}
 				<div className="text-center mb-16">
@@ -14,7 +20,7 @@ const About: React.FC = () => {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.6 }}
-						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent ">
 						About Me
 					</motion.h2>
 
@@ -51,56 +57,24 @@ const About: React.FC = () => {
 
 					{/* Right Content */}
 					<div className="space-y-6">
-						{/* Professional Strengths */}
-						<motion.p
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
-							transition={{ delay: 0.2, duration: 0.6 }}
-							className="text-lg text-slate-300 leading-relaxed">
-							I'm a dedicated full-stack developer specializing in
-							the MERN stack, with a passion for building
-							applications that not only function beautifully but
-							also deliver measurable impact. My work is driven by
-							excellence, creativity, and a purpose-driven
-							approach to technology.
-						</motion.p>
-
-						<motion.p
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
-							transition={{ delay: 0.4, duration: 0.6 }}
-							className="text-lg text-slate-300 leading-relaxed">
-							I thrive in building scalable systems, optimizing
-							performance, and applying best practices in modern
-							web development. From clean code to deployment, I
-							enjoy the full lifecycle of bringing ideas to life.
-						</motion.p>
-
-						{/* Learning Mindset Note */}
-						<motion.p
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
-							transition={{ delay: 0.6, duration: 0.6 }}
-							className="text-lg text-slate-300 leading-relaxed italic">
-							Always exploring new tools, frameworks, and best
-							practices — because learning never stops.
-						</motion.p>
-
-						{/* Personal Hobbies */}
-						<motion.p
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
-							transition={{ delay: 0.8, duration: 0.6 }}
-							className="text-lg text-slate-300 leading-relaxed">
-							Outside of coding, I find rhythm behind a drum set,
-							freedom on open roads, and joy in tinkering with
-							Linux systems — all of which inspire creativity in
-							my work.
-						</motion.p>
+						{[
+							"I'm a dedicated full-stack developer specializing in the MERN stack, with a passion for building applications that not only function beautifully but also deliver measurable impact. My work is driven by excellence, creativity, and a purpose-driven approach to technology.",
+							"I thrive in building scalable systems, optimizing performance, and applying best practices in modern web development. From clean code to deployment, I enjoy the full lifecycle of bringing ideas to life.",
+							"Always exploring new tools, frameworks, and best practices — because learning never stops.",
+							"Outside of coding, I find rhythm behind a drum set, freedom on open roads, and joy in tinkering with Linux systems — all of which inspire creativity in my work.",
+						].map((text, idx) => (
+							<motion.p
+								key={idx}
+								initial={{ opacity: 0, y: 20 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								viewport={{ once: true }}
+								transition={{ delay: 0.2 * idx, duration: 0.6 }}
+								className={`text-lg text-slate-300 leading-relaxed ${
+									idx === 2 ? "italic" : ""
+								}`}>
+								{text}
+							</motion.p>
+						))}
 
 						{/* Passions */}
 						<div className="grid grid-cols-2 gap-4 mt-8">
@@ -150,7 +124,7 @@ const About: React.FC = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 

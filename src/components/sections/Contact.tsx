@@ -29,17 +29,27 @@ const Contact: React.FC = () => {
 					transition={{ duration: 0.6 }}
 					viewport={{ once: true }}
 					className="text-center mb-16">
-					<h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+					<motion.h2
+						id="contact-heading"
+						initial={{ opacity: 0, y: -20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.6 }}
+						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent ">
 						Let's Connect
-					</h2>
-					<p className="text-xl text-slate-300 max-w-3xl mx-auto">
-						Ready to bring your ideas to life? Let's discuss how we
-						can work together to create something extraordinary.
-					</p>
+					</motion.h2>
+					<motion.p
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ delay: 0.2, duration: 0.6 }}
+						className="text-xl text-slate-300 max-w-3xl mx-auto">
+						Ready to bring your ideas to life? Let’s discuss how we
+						can work together.
+					</motion.p>
 				</motion.div>
 
 				<div className="max-w-4xl mx-auto">
-					{/* <div className="grid md:grid-cols-2 gap-12"> */}
 					{/* Contact Info */}
 					<motion.div
 						variants={containerVariants}
@@ -68,7 +78,6 @@ const Contact: React.FC = () => {
 							)
 						)}
 					</motion.div>
-					{/* </div> */}
 				</div>
 			</div>
 		</section>

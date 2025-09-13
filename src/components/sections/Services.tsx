@@ -18,6 +18,7 @@ const Services: React.FC = () => {
 			aria-labelledby="services-heading"
 			className="py-20">
 			<div className="container mx-auto px-6">
+				{/* Section header */}
 				<div className="text-center mb-16">
 					<motion.h2
 						id="services-heading"
@@ -40,6 +41,7 @@ const Services: React.FC = () => {
 					</motion.p>
 				</div>
 
+				{/* Services grid */}
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{SERVICES.map(
 						(

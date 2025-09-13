@@ -29,11 +29,11 @@ const Footer: React.FC = () => {
 					variants={containerVariants}
 					className="text-center">
 					{/* Name */}
-					<motion.div
+					<motion.h2
 						variants={itemVariants}
-						className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+						className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent ">
 						Shedrack Okunda
-					</motion.div>
+					</motion.h2>
 
 					{/* Tagline */}
 					<motion.p

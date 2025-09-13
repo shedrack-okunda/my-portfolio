@@ -28,15 +28,31 @@ const Projects: React.FC = () => {
 		<section id="projects" className="py-20 bg-slate-900/50">
 			<div className="container mx-auto px-6">
 				{/* Section Header */}
-				<div className="text-center mb-16">
-					<h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+				<motion.div
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.6 }}
+					viewport={{ once: true }}
+					className="text-center mb-16">
+					<motion.h2
+						id="projects-heading"
+						initial={{ opacity: 0, y: -20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.6 }}
+						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent ">
 						Featured Projects
-					</h2>
-					<p className="text-xl text-slate-300 max-w-3xl mx-auto">
+					</motion.h2>
+					<motion.p
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ delay: 0.2, duration: 0.6 }}
+						className="text-xl text-slate-300 max-w-3xl mx-auto">
 						A showcase of my recent work, demonstrating expertise in
 						full-stack development and modern web technologies.
-					</p>
-				</div>
+					</motion.p>
+				</motion.div>
 
 				{/* Projects Grid */}
 				<motion.div
