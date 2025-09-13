@@ -30,16 +30,10 @@ portfolio/
 ├── src/
 |   ├── assets
 │   ├── components/
-|   |   ├── ui/
 │   │   ├── sections/
 |   |   ├── common
 │   ├── layout/
-|   ├── pages/
-|   ├── hooks/
-|   ├── lib/
-│   ├── types/
 |   ├── config/
-|   ├── styles/
 │   ├── App.tsx
 │   ├── main.tsx
 │   └── vite-env.d.ts
