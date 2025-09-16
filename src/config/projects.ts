@@ -11,10 +11,21 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
 	{
-		id: "1",
-		title: "Modern Business Landing Page",
+		id: "0",
+		title: "Trauma Healing & Holistic Care Website",
 		description:
-			"A sleek, responsive business website built to showcase modern UI principles using React, Tailwind CSS, and TypeScript. Fully mobile-optimized with clean component architecture.",
+			"A practice focused on trauma recovery and holistic healing. The site emphasizes clarity, calm aesthetics, and user-friendly navigation while integrating best practices for SEO, accessibility, and performance.",
+		technologies: ["React", "TypeScript", "Tailwindcss"],
+		imageUrl: "/images/tullier.png",
+		githubUrl: "https://github.com/shedrack-okunda/Tullier.git",
+		liveUrl: "https://tullierwellness.vercel.app/",
+		category: "frontend",
+	},
+	{
+		id: "1",
+		title: "Patient-Centered Home Care Website",
+		description:
+			"A provider specializing in compassionate in-home patient care. The site highlights services, caregiver information, and contact options with a clean, trustworthy design, ensuring families can easily connect with caregivers and explore care options.",
 		technologies: ["React", "TypeScript", "Tailwindcss"],
 		imageUrl: "/images/unity.png",
 		githubUrl: "https://github.com/shedrack-okunda/Unity-HomeCare-Services",
