@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
 		description:
 			"A practice focused on trauma recovery and holistic healing. The site emphasizes clarity, calm aesthetics, and user-friendly navigation while integrating best practices for SEO, accessibility, and performance.",
 		technologies: ["React", "TypeScript", "Tailwindcss"],
-		imageUrl: "/images/tullier.png",
+		imageUrl: "/images/tullier.jpeg",
 		githubUrl: "https://github.com/shedrack-okunda/Tullier.git",
 		liveUrl: "https://tullierwellness.vercel.app/",
 		category: "frontend",
@@ -27,7 +27,7 @@ export const PROJECTS: Project[] = [
 		description:
 			"A provider specializing in compassionate in-home patient care. The site highlights services, caregiver information, and contact options with a clean, trustworthy design, ensuring families can easily connect with caregivers and explore care options.",
 		technologies: ["React", "TypeScript", "Tailwindcss"],
-		imageUrl: "/images/unity.png",
+		imageUrl: "/images/unity.jpeg",
 		githubUrl: "https://github.com/shedrack-okunda/Unity-HomeCare-Services",
 		liveUrl: "https://unity-home-care-services.vercel.app/",
 		category: "frontend",
@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [
 			"Tailwindcss",
 			"TypeScript",
 		],
-		imageUrl: "/images/educonnect.png",
+		imageUrl: "/images/educonnect.jpeg",
 		githubUrl: "https://github.com/shedrack-okunda/EduConnect.git",
 		liveUrl: "https://edu-connect-orcin.vercel.app/",
 		category: "fullstack",
