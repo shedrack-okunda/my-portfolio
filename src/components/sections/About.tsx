@@ -61,7 +61,6 @@ const About: React.FC = () => {
 							"I'm a dedicated full-stack developer specializing in the MERN stack, with a passion for building applications that not only function beautifully but also deliver measurable impact. My work is driven by excellence, creativity, and a purpose-driven approach to technology.",
 							"I thrive in building scalable systems, optimizing performance, and applying best practices in modern web development. From clean code to deployment, I enjoy the full lifecycle of bringing ideas to life.",
 							"Always exploring new tools, frameworks, and best practices — because learning never stops.",
-							"Outside of coding, I find rhythm behind a drum set, freedom on open roads, and joy in tinkering with Linux systems — all of which inspire creativity in my work.",
 						].map((text, idx) => (
 							<motion.p
 								key={idx}

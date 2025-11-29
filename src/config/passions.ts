@@ -1,11 +1,4 @@
-import {
-	Car,
-	Code,
-	Heart,
-	Mountain,
-	Music,
-	type LucideIcon,
-} from "lucide-react";
+import { Car, Code, Mountain, Music, type LucideIcon } from "lucide-react";
 
 export interface Passions {
 	id: string;
@@ -41,11 +34,5 @@ export const PASSIONS: Passions[] = [
 		description:
 			"Exploring new horizons and finding inspiration on the road.",
 		icon: Car,
-	},
-	{
-		id: "kingdom-minded",
-		title: "Kingdom Minded",
-		description: "Living with purpose and spiritual conviction.",
-		icon: Heart,
 	},
 ];

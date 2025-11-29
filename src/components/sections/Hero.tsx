@@ -66,10 +66,7 @@ const Hero: React.FC = () => {
 						className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
 						Passionate MERN stack developer crafting digital
 						experiences with purpose and excellence.
-						<br />•{" "}
-						<span className="text-purple-400">
-							Linux enthusiast
-						</span>
+						<br />
 					</motion.p>
 
 					{/* CTA Buttons */}
