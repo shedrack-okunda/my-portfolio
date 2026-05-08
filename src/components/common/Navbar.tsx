@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NAV_LINKS } from "../../config/navigation";
-import { Menu, X } from "lucide-react";
+import {  Menu, X } from "lucide-react";
 
 const Navbar: React.FC = () => {
 	const [currentSection, setCurrentSection] = useState("hero");
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
 					}
 				});
 			},
-			{ threshold: 0.4, rootMargin: "-50px 0px -50px 0px" }
+			{ threshold: 0.4, rootMargin: "-50px 0px -50px 0px" },
 		);
 
 		NAV_LINKS.forEach(({ id }) => {
@@ -55,11 +55,11 @@ const Navbar: React.FC = () => {
 
 				{/* Desktop Menu */}
 				<div className="hidden md:flex items-center space-x-8">
-					{NAV_LINKS.map(({ id, label }) => (
+					{NAV_LINKS.map(({ id, label, icon: Icon }) => (
 						<a
 							key={id}
 							href={`#${id}`}
-							className={`capitalize font-semibold transition-colors duration-200 ${
+							className={`flex capitalize text-center font-semibold transition-colors duration-200 ${
 								currentSection === id
 									? "text-blue-400"
 									: "text-white hover:text-blue-400"
@@ -67,6 +67,9 @@ const Navbar: React.FC = () => {
 							aria-current={
 								currentSection === id ? "page" : undefined
 							}>
+							<Icon
+								className="w-6 h-6 mr-2"
+								aria-hidden="true"></Icon>
 							{label}
 						</a>
 					))}
