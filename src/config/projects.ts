@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
 		technologies: ["React", "TypeScript", "Tailwindcss"],
 		imageUrl: "/images/unity.jpeg",
 		githubUrl: "https://github.com/shedrack-okunda/Unity-HomeCare-Services",
-		liveUrl: "https://unity-home-care-services.vercel.app/",
+		liveUrl: "https://unity-homecare.vercel.app/",
 		category: "frontend",
 	},
 	{
