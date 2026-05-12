@@ -30,9 +30,9 @@ const About: React.FC = () => {
 						viewport={{ once: true }}
 						transition={{ delay: 0.2, duration: 0.6 }}
 						className="text-xl text-slate-300 max-w-3xl mx-auto">
-						A passionate full-stack developer with a heart for
-						creating meaningful digital experiences that serve a
-						greater purpose.
+						Full-stack developer focused on building modern,
+						responsive, and user-centered applications with clean
+						design and scalable architecture.
 					</motion.p>
 				</div>
 
@@ -50,7 +50,7 @@ const About: React.FC = () => {
 								aria-hidden="true"
 							/>
 							<p className="text-slate-300">
-								Problem-Solver at Heart
+								Building scalable web & mobile experiences{" "}
 							</p>
 						</div>
 					</motion.div>
@@ -58,9 +58,11 @@ const About: React.FC = () => {
 					{/* Right Content */}
 					<div className="space-y-6">
 						{[
-							"I'm a dedicated full-stack developer specializing in the MERN stack, with a passion for building applications that not only function beautifully but also deliver measurable impact. My work is driven by excellence, creativity, and a purpose-driven approach to technology.",
-							"I thrive in building scalable systems, optimizing performance, and applying best practices in modern web development. From clean code to deployment, I enjoy the full lifecycle of bringing ideas to life.",
-							"Always exploring new tools, frameworks, and best practices — because learning never stops.",
+							"I’m a full-stack developer focused on building responsive and scalable web applications using modern technologies like React, Node.js, TypeScript, and MongoDB. I enjoy turning ideas into functional products with clean user interfaces and efficient backend systems.",
+
+							"I’m particularly interested in frontend engineering, API development, authentication systems, and performance optimization. I enjoy solving real-world problems through code and continuously improving my development workflow and software architecture skills.",
+
+							"Currently, I’m expanding my skills in mobile development with React Native while continuing to deepen my knowledge of full-stack application development. I’m actively seeking internship and junior developer opportunities where I can contribute, collaborate, and grow as a software engineer.",
 						].map((text, idx) => (
 							<motion.p
 								key={idx}
@@ -75,12 +77,34 @@ const About: React.FC = () => {
 							</motion.p>
 						))}
 
+						<div className="mt-8">
+							<h3 className="text-lg font-semibold mb-4 text-white">
+								Currently Learning
+							</h3>
+
+							<div className="flex flex-wrap gap-3">
+								{[
+									"React Native",
+									"Next.js",
+									"System Design",
+									"PostgreSQL",
+									"Docker",
+								].map((item) => (
+									<span
+										key={item}
+										className="px-4 py-2 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-300">
+										{item}
+									</span>
+								))}
+							</div>
+						</div>
+
 						{/* Passions */}
 						<div className="grid grid-cols-2 gap-4 mt-8">
 							{PASSIONS.map(
 								(
 									{ id, icon: Icon, title, description },
-									idx
+									idx,
 								) => (
 									<motion.div
 										key={id}
@@ -117,7 +141,7 @@ const About: React.FC = () => {
 											</p>
 										</div>
 									</motion.div>
-								)
+								),
 							)}
 						</div>
 					</div>
