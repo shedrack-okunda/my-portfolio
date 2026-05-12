@@ -1,6 +1,6 @@
 import type React from "react";
 import { motion, type Variants } from "framer-motion";
-import { SERVICES } from "../../config/services";
+import { SERVICES } from "../../config/skills";
 
 const cardVariants: Variants = {
 	hidden: { opacity: 0, y: 30 },
@@ -14,7 +14,7 @@ const cardVariants: Variants = {
 const Services: React.FC = () => {
 	return (
 		<section
-			id="services"
+			id="skills"
 			aria-labelledby="services-heading"
 			className="py-20">
 			<div className="container mx-auto px-6">
@@ -27,7 +27,7 @@ const Services: React.FC = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.6 }}
 						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-						Services
+						Tech Stack & Expertise{" "}
 					</motion.h2>
 					<motion.p
 						initial={{ opacity: 0, y: 10 }}
@@ -35,9 +35,8 @@ const Services: React.FC = () => {
 						viewport={{ once: true }}
 						transition={{ delay: 0.2, duration: 0.6 }}
 						className="text-xl text-slate-300 max-w-3xl mx-auto">
-						Comprehensive web development services tailored to bring
-						your vision to life with modern technologies and best
-						practices.
+						Technologies, tools, and development practices I use to
+						build scalable, responsive, and modern web applications.
 					</motion.p>
 				</div>
 
@@ -46,7 +45,7 @@ const Services: React.FC = () => {
 					{SERVICES.map(
 						(
 							{ id, title, description, icon: Icon, features },
-							index
+							index,
 						) => (
 							<motion.article
 								key={id}
@@ -80,34 +79,17 @@ const Services: React.FC = () => {
 								<p className="text-slate-300 mb-6 leading-relaxed">
 									{description}
 								</p>
-								<ul className="space-y-2 sm:flex sm:flex-wrap sm:gap-x-4 sm:gap-y-2 sm:space-y-0">
-									{features.map((feature, i) => {
-										const [tech, impact] =
-											feature.split("→");
-										return (
-											<li
-												key={i}
-												className="flex items-center text-sm">
-												<div className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></div>
-												<span className="text-slate-400">
-													{tech.trim()}
-												</span>
-												{impact && (
-													<span
-														className={`ml-1 ${
-															i % 2 === 0
-																? "text-blue-300"
-																: "text-green-300"
-														}`}>
-														→ {impact.trim()}
-													</span>
-												)}
-											</li>
-										);
-									})}
-								</ul>
+								<div className="flex flex-wrap gap-2 mt-4">
+									{features.map((feature) => (
+										<span
+											key={feature}
+											className="px-3 py-1 rounded-full bg-slate-700/50 border border-slate-600 text-sm text-slate-300">
+											{feature}
+										</span>
+									))}
+								</div>
 							</motion.article>
-						)
+						),
 					)}
 				</div>
 			</div>

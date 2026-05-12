@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NAV_LINKS } from "../../config/navigation";
-import {  Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar: React.FC = () => {
 	const [currentSection, setCurrentSection] = useState("hero");
