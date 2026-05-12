@@ -66,6 +66,8 @@ const Projects: React.FC = () => {
 							id,
 							title,
 							description,
+							features,
+							challenges,
 							technologies,
 							category,
 							imageUrl,
@@ -107,8 +109,36 @@ const Projects: React.FC = () => {
 											{description}
 										</p>
 
+										{features && (
+											<div className="mt-4 space-y-1">
+												<p className="text-sm text-blue-400 font-semibold">
+													Key Features:
+												</p>
+												<ul className="text-sm text-slate-300 list-disc list-inside space-y-1">
+													{features.map(
+														(feature, i) => (
+															<li key={i}>
+																{feature}
+															</li>
+														),
+													)}
+												</ul>
+											</div>
+										)}
+
+										{challenges && (
+											<div className="mt-4">
+												<p className="text-sm text-purple-400 font-semibold">
+													Challenges Solved:
+												</p>
+												<p className="text-sm text-slate-300 mt-1">
+													{challenges}
+												</p>
+											</div>
+										)}
+
 										{/* Tech Stack */}
-										<div className="flex flex-wrap gap-2 mb-6">
+										<div className="flex flex-wrap gap-2 mt-4 mb-6">
 											{technologies.map((tech, index) => (
 												<span
 													key={index}
@@ -146,7 +176,7 @@ const Projects: React.FC = () => {
 									</div>
 								</div>
 							</motion.div>
-						)
+						),
 					)}
 				</motion.div>
 			</div>
