@@ -53,8 +53,23 @@ const Hero: React.FC = () => {
 						transition={{ duration: 0.8, delay: 0.5 }}
 						viewport={{ once: true }}
 						className="text-2xl mb-1 font-semibold text-slate-200">
-						Full-Stack Developer
-						<br />• MERN | TypeScript | Tailwind
+						Full-Stack MERN Developer
+						<div className="flex flex-wrap justify-center gap-3 mt-4">
+							{[
+								"React.js",
+								"Node.js",
+								"TypeScript",
+								"MongoDB",
+								"Tailwind CSS",
+								"Express.js",
+							].map((tech) => (
+								<span
+									key={tech}
+									className="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-sm text-slate-300">
+									{tech}
+								</span>
+							))}
+						</div>
 					</motion.h2>
 
 					{/* Description */}
@@ -64,8 +79,9 @@ const Hero: React.FC = () => {
 						transition={{ duration: 0.8, delay: 0.7 }}
 						viewport={{ once: true }}
 						className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
-						Passionate MERN stack developer crafting digital
-						experiences with purpose and excellence.
+						I build scalable and responsive applications that
+						combine clean design, performance, and real-world
+						usability.
 						<br />
 					</motion.p>
 
@@ -79,12 +95,22 @@ const Hero: React.FC = () => {
 						<a
 							href="#projects"
 							className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-200 transform hover:scale-105">
-							View My Work
+							View Projects
 						</a>
+
 						<a
 							href="#contact"
-							className="px-8 py-3 border border-slate-700 rounded-lg font-semibold hover:bg-slate-800 transition-all duration-200">
-							Get In Touch
+							className="px-8 py-3 border border-slate-700 rounded-lg font-semibold hover:bg-slate-800 transition-all duration-200 transform hover:scale-105">
+							Contact Me
+						</a>
+
+						<a
+							href="/cv.pdf"
+							download
+							target="_blank"
+							rel="noopener noreferrer"
+							className="px-8 py-3 border border-slate-700 rounded-lg font-semibold hover:bg-slate-700 transition-all duration-200 transform hover:scale-105">
+							Download CV
 						</a>
 					</motion.div>
 
