@@ -5,6 +5,7 @@ export interface PersonalInfo {
 	title: string;
 	detail: string;
 	icon: LucideIcon;
+	link?: string;
 }
 
 export const PERSONAL_INFO: PersonalInfo[] = [
@@ -13,12 +14,14 @@ export const PERSONAL_INFO: PersonalInfo[] = [
 		icon: Mail,
 		title: "Email",
 		detail: "okundashedrack@gmail.com",
+		link: "mailto:okundashedrack@gmail.com",
 	},
 	{
 		id: "2",
 		icon: Phone,
 		title: "Phone",
 		detail: "+254 720 260 412",
+		link: "tel:+254720260412",
 	},
 	{
 		id: "3",

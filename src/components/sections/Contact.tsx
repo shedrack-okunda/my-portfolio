@@ -38,6 +38,18 @@ const Contact: React.FC = () => {
 						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent ">
 						Let's Connect
 					</motion.h2>
+
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						viewport={{ once: true }}
+						className="mt-5 mb-5 text-center">
+						<span className="px-4 py-2 bg-green-500/10 text-green-400 border border-green-500/30 rounded-full text-sm">
+							Available for Junior Developer / Internship
+							Opportunities
+						</span>
+					</motion.div>
+
 					<motion.p
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -58,11 +70,14 @@ const Contact: React.FC = () => {
 						viewport={{ once: true, amount: 0.2 }}
 						className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-8 gap-6">
 						{PERSONAL_INFO.map(
-							({ icon: Icon, title, detail }, i) => (
-								<motion.div
+							({ icon: Icon, title, detail, link }, i) => (
+								<motion.a
 									key={i}
+									href={link}
+									target="_blank"
+									rel="noopener noreferrer"
 									variants={itemVariants}
-									className="flex items-center space-x-4 group">
+									className="flex items-center space-x-4 group hover:bg-slate-800/30 p-3 rounded-lg transition">
 									<div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:bg-blue-500/30">
 										<Icon className="w-6 h-6 text-blue-400" />
 									</div>
@@ -74,8 +89,8 @@ const Contact: React.FC = () => {
 											{detail}
 										</p>
 									</div>
-								</motion.div>
-							)
+								</motion.a>
+							),
 						)}
 					</motion.div>
 				</div>
