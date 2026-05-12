@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
 
 				{/* Desktop Menu */}
 				<div className="hidden md:flex items-center space-x-8">
-					{NAV_LINKS.map(({ id, label, icon: Icon }) => (
+					{NAV_LINKS.map(({ id, label }) => (
 						<a
 							key={id}
 							href={`#${id}`}
@@ -67,9 +67,6 @@ const Navbar: React.FC = () => {
 							aria-current={
 								currentSection === id ? "page" : undefined
 							}>
-							<Icon
-								className="w-6 h-6 mr-2"
-								aria-hidden="true"></Icon>
 							{label}
 						</a>
 					))}

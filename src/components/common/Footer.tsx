@@ -39,8 +39,40 @@ const Footer: React.FC = () => {
 					<motion.p
 						variants={itemVariants}
 						className="text-slate-400 mb-6">
-						Crafting digital experiences with passion and purpose.
+						Building scalable web applications and crafting clean
+						digital experiences with purpose.{" "}
 					</motion.p>
+
+					{/* Quick Navigation */}
+					<motion.div
+						variants={itemVariants}
+						className="flex flex-wrap justify-center gap-6 mb-6 text-sm">
+						<a
+							href="#home"
+							className="text-slate-400 hover:text-white transition">
+							Home
+						</a>
+						<a
+							href="#about"
+							className="text-slate-400 hover:text-white transition">
+							About
+						</a>
+						<a
+							href="#projects"
+							className="text-slate-400 hover:text-white transition">
+							Projects
+						</a>
+						<a
+							href="#skills"
+							className="text-slate-400 hover:text-white transition">
+							Skills
+						</a>
+						<a
+							href="#contact"
+							className="text-slate-400 hover:text-white transition">
+							Contact
+						</a>
+					</motion.div>
 
 					{/* Social Links */}
 					<motion.div
