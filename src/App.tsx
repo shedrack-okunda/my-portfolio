@@ -7,15 +7,15 @@ import Contact from "./components/sections/Contact";
 import Layout from "./components/layouts/Layout";
 
 const App: React.FC = () => {
-	return (
-		<Layout>
-			<Hero />
-			<About />
-			<Skills />
-			<Projects />
-			<Contact />
-		</Layout>
-	);
+  return (
+    <Layout>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </Layout>
+  );
 };
 
 export default App;

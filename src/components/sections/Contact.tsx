@@ -45,8 +45,7 @@ const Contact: React.FC = () => {
 						viewport={{ once: true }}
 						className="mt-5 mb-5 text-center">
 						<span className="px-4 py-2 bg-green-500/10 text-green-400 border border-green-500/30 rounded-full text-sm">
-							Available for Junior Developer / Internship
-							Opportunities
+							Available for Junior Developer Opportunities
 						</span>
 					</motion.div>
 
