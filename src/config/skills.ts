@@ -2,7 +2,6 @@ import {
   Database,
   Globe,
   Palette,
-  Smartphone,
   type LucideIcon,
 } from "lucide-react";
 
