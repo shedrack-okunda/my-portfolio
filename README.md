@@ -6,21 +6,21 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 ## ✨ Features
 
--   **Modern Design**: Clean, professional design with dark theme and gradient accents
--   **Responsive Layout**: Fully responsive across all devices and screen sizes
--   **Interactive Elements**: Smooth animations, hover effects, and transitions
--   **TypeScript**: Type-safe code for better development experience
--   **Performance Optimized**: Fast loading and smooth user experience
--   **SEO Friendly**: Proper meta tags and semantic HTML structure
--   **Accessibility**: WCAG compliant with proper contrast and keyboard navigation
+- **Modern Design**: Clean, professional design with dark theme and gradient accents
+- **Responsive Layout**: Fully responsive across all devices and screen sizes
+- **Interactive Elements**: Smooth animations, hover effects, and transitions
+- **TypeScript**: Type-safe code for better development experience
+- **Performance Optimized**: Fast loading and smooth user experience
+- **SEO Friendly**: Proper meta tags and semantic HTML structure
+- **Accessibility**: WCAG compliant with proper contrast and keyboard navigation
 
 ## 🛠️ Tech Stack
 
--   **Frontend**: React 18, TypeScript, Tailwind CSS
--   **Icons**: Lucide React
--   **Build Tool**: Vite
--   **Deployment**: Vercel
--   **Version Control**: Git & GitHub
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Deployment**: Vercel
+- **Version Control**: Git & GitHub
 
 ## 📁 Project Structure
 
@@ -28,7 +28,6 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 portfolio/
 ├── public/
 ├── src/
-|   ├── assets
 │   ├── components/
 │   │   ├── sections/
 |   |   ├── common
@@ -37,7 +36,6 @@ portfolio/
 │   ├── App.tsx
 │   ├── main.tsx
 │   └── vite-env.d.ts
-├── .env.example
 ├── .gitignore
 ├── package.json
 ├── index.html
@@ -51,65 +49,20 @@ portfolio/
 
 ### Prerequisites
 
--   Node.js (v18 or higher)
--   npm or yarn
--   Git
-
-### Installation
-
-1. **Clone the repository**
-
-    ```bash
-    git clone https://github.com/yourusername/portfolio.git
-    cd portfolio
-    ```
-
-2. **Install dependencies**
-
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
-
-3. **Start the development server**
-
-    ```bash
-    npm run dev
-    # or
-    yarn dev
-    ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:5173`
-
-## 🎨 Customization
-
-### Styling
-
-The website uses Tailwind CSS for styling. You can customize the theme in `tailwind.config.js`:
+- Node.js (v18 or higher)
+- npm or yarn
+- Git
 
 ## 🌟 Performance Optimization
 
--   **Code Splitting**: Components are lazy-loaded for better performance
--   **Image Optimization**: Images are optimized and lazy-loaded
--   **Bundle Analysis**: Use `npm run build -- --analyze` to analyze bundle size
--   **SEO**: Proper meta tags and structured data
+- **Code Splitting**: Components are lazy-loaded for better performance
+- **Image Optimization**: Images are optimized and lazy-loaded
+- **Bundle Analysis**: Use `npm run build -- --analyze` to analyze bundle size
+- **SEO**: Proper meta tags and structured data
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
--   [React](https://reactjs.org/) - The web framework used
--   [Tailwind CSS](https://tailwindcss.com/) - For styling
--   [Lucide React](https://lucide.dev/) - For icons
--   [Vercel](https://vercel.com/) - For deployment
-
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![React](https://img.shields.io/badge/React-18-blue)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-3-blueviolet)
 
 ---
 

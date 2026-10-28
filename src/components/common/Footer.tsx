@@ -27,49 +27,55 @@ const Footer: React.FC = () => {
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.2 }}
 					variants={containerVariants}
-					className="text-center">
+					className="text-center"
+				>
 					{/* Name */}
 					<motion.h2
 						variants={itemVariants}
-						className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent ">
+						className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent "
+					>
 						Shedrack Okunda
 					</motion.h2>
 
 					{/* Tagline */}
-					<motion.p
-						variants={itemVariants}
-						className="text-slate-400 mb-6">
-						Building scalable web applications and crafting clean
-						digital experiences with purpose.{" "}
+					<motion.p variants={itemVariants} className="text-slate-400 mb-6">
+						Building scalable web applications and crafting clean digital
+						experiences with purpose.{" "}
 					</motion.p>
 
 					{/* Quick Navigation */}
 					<motion.div
 						variants={itemVariants}
-						className="flex flex-wrap justify-center gap-6 mb-6 text-sm">
+						className="flex flex-wrap justify-center gap-6 mb-6 text-sm"
+					>
 						<a
 							href="#home"
-							className="text-slate-400 hover:text-white transition">
+							className="text-slate-400 hover:text-white transition"
+						>
 							Home
 						</a>
 						<a
 							href="#about"
-							className="text-slate-400 hover:text-white transition">
+							className="text-slate-400 hover:text-white transition"
+						>
 							About
 						</a>
 						<a
 							href="#projects"
-							className="text-slate-400 hover:text-white transition">
+							className="text-slate-400 hover:text-white transition"
+						>
 							Projects
 						</a>
 						<a
 							href="#skills"
-							className="text-slate-400 hover:text-white transition">
+							className="text-slate-400 hover:text-white transition"
+						>
 							Skills
 						</a>
 						<a
 							href="#contact"
-							className="text-slate-400 hover:text-white transition">
+							className="text-slate-400 hover:text-white transition"
+						>
 							Contact
 						</a>
 					</motion.div>
@@ -77,7 +83,8 @@ const Footer: React.FC = () => {
 					{/* Social Links */}
 					<motion.div
 						variants={itemVariants}
-						className="flex justify-center space-x-6 mb-6">
+						className="flex justify-center space-x-6 mb-6"
+					>
 						{SOCIAL_LINKS.map(({ id, href, icon: Icon, label }) => (
 							<motion.a
 								key={id}
@@ -87,18 +94,16 @@ const Footer: React.FC = () => {
 								rel="noopener noreferrer"
 								whileHover={{ scale: 1.15 }}
 								whileTap={{ scale: 0.95 }}
-								className="text-slate-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+								className="text-slate-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+							>
 								<Icon className="w-6 h-6" />
 							</motion.a>
 						))}
 					</motion.div>
 
 					{/* Copyright */}
-					<motion.p
-						variants={itemVariants}
-						className="text-slate-500 text-sm">
-						© {new Date().getFullYear()} Shedrack Okunda. All Rights
-						Reserved.
+					<motion.p variants={itemVariants} className="text-slate-500 text-sm">
+						© {new Date().getFullYear()} Shedrack Okunda. All Rights Reserved.
 					</motion.p>
 				</motion.div>
 			</div>

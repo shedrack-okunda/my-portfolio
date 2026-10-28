@@ -11,15 +11,13 @@ export const PASSIONS: Passions[] = [
 	{
 		id: "development",
 		title: "Full-Stack Development",
-		description:
-			"Crafting scalable web applications with modern technologies.",
+		description: "Crafting scalable web applications with modern technologies.",
 		icon: Code,
 	},
 	{
 		id: "linux",
 		title: "Linux Enthusiast",
-		description:
-			"Embracing open-source philosophy and system optimization.",
+		description: "Embracing open-source philosophy and system optimization.",
 		icon: Mountain,
 	},
 ];

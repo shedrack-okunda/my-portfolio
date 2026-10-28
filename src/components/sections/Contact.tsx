@@ -28,14 +28,16 @@ const Contact: React.FC = () => {
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
 					viewport={{ once: true }}
-					className="text-center mb-16">
+					className="text-center mb-16"
+				>
 					<motion.h2
 						id="contact-heading"
 						initial={{ opacity: 0, y: -20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.6 }}
-						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent ">
+						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent "
+					>
 						Let's Connect
 					</motion.h2>
 
@@ -43,9 +45,10 @@ const Contact: React.FC = () => {
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
-						className="mt-5 mb-5 text-center">
+						className="mt-5 mb-5 text-center"
+					>
 						<span className="px-4 py-2 bg-green-500/10 text-green-400 border border-green-500/30 rounded-full text-sm">
-							Available for Junior Developer Opportunities
+							Available for Developer Opportunities
 						</span>
 					</motion.div>
 
@@ -54,9 +57,10 @@ const Contact: React.FC = () => {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ delay: 0.2, duration: 0.6 }}
-						className="text-xl text-slate-300 max-w-3xl mx-auto">
-						Ready to bring your ideas to life? Let’s discuss how we
-						can work together.
+						className="text-xl text-slate-300 max-w-3xl mx-auto"
+					>
+						Ready to bring your ideas to life? Let’s discuss how we can work
+						together.
 					</motion.p>
 				</motion.div>
 
@@ -67,30 +71,28 @@ const Contact: React.FC = () => {
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.2 }}
-						className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-8 gap-6">
-						{PERSONAL_INFO.map(
-							({ icon: Icon, title, detail, link }, i) => (
-								<motion.a
-									key={i}
-									href={link}
-									target="_blank"
-									rel="noopener noreferrer"
-									variants={itemVariants}
-									className="flex items-center space-x-4 group hover:bg-slate-800/30 p-3 rounded-lg transition">
-									<div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:bg-blue-500/30">
-										<Icon className="w-6 h-6 text-blue-400" />
-									</div>
-									<div>
-										<h3 className="font-semibold group-hover:text-blue-400 transition-colors duration-200">
-											{title}
-										</h3>
-										<p className="text-slate-400">
-											{detail}
-										</p>
-									</div>
-								</motion.a>
-							),
-						)}
+						className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-8 gap-6"
+					>
+						{PERSONAL_INFO.map(({ icon: Icon, title, detail, link }, i) => (
+							<motion.a
+								key={i}
+								href={link}
+								target="_blank"
+								rel="noopener noreferrer"
+								variants={itemVariants}
+								className="flex items-center space-x-4 group hover:bg-slate-800/30 p-3 rounded-lg transition"
+							>
+								<div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:bg-blue-500/30">
+									<Icon className="w-6 h-6 text-blue-400" />
+								</div>
+								<div>
+									<h3 className="font-semibold group-hover:text-blue-400 transition-colors duration-200">
+										{title}
+									</h3>
+									<p className="text-slate-400">{detail}</p>
+								</div>
+							</motion.a>
+						))}
 					</motion.div>
 				</div>
 			</div>

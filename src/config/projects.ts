@@ -67,28 +67,4 @@ export const PROJECTS: Project[] = [
 		liveUrl: "https://unity-homecare.vercel.app/",
 		category: "frontend",
 	},
-
-	{
-		id: "2",
-		title: "Trauma Healing & Holistic Care Website",
-		description:
-			"A wellness-focused platform designed to communicate trauma healing services with calm UI, accessibility, and performance optimization.",
-
-		features: [
-			"SEO optimization",
-			"Accessibility improvements",
-			"Responsive design",
-			"Clean UI/UX layout",
-		],
-
-		challenges:
-			"Designing a calm, emotionally sensitive interface while maintaining performance and accessibility standards.",
-
-		technologies: ["React", "TypeScript", "TailwindCSS"],
-
-		imageUrl: "/images/tullier.jpeg",
-		githubUrl: "https://github.com/shedrack-okunda/Tullier.git",
-		liveUrl: "https://tullierwellness.vercel.app/",
-		category: "frontend",
-	},
 ];

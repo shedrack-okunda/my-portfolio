@@ -4,18 +4,18 @@ import About from "./components/sections/About";
 import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
-import Layout from "./components/layouts/Layout";
+import Layout from "./layouts/Layout";
 
 const App: React.FC = () => {
-  return (
-    <Layout>
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-    </Layout>
-  );
+	return (
+		<Layout>
+			<Hero />
+			<About />
+			<Skills />
+			<Projects />
+			<Contact />
+		</Layout>
+	);
 };
 
 export default App;

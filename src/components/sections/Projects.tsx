@@ -33,14 +33,16 @@ const Projects: React.FC = () => {
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
 					viewport={{ once: true }}
-					className="text-center mb-16">
+					className="text-center mb-16"
+				>
 					<motion.h2
 						id="projects-heading"
 						initial={{ opacity: 0, y: -20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.6 }}
-						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent ">
+						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent "
+					>
 						Featured Projects
 					</motion.h2>
 					<motion.p
@@ -48,9 +50,10 @@ const Projects: React.FC = () => {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ delay: 0.2, duration: 0.6 }}
-						className="text-xl text-slate-300 max-w-3xl mx-auto">
-						A showcase of my recent work, demonstrating expertise in
-						full-stack development and modern web technologies.
+						className="text-xl text-slate-300 max-w-3xl mx-auto"
+					>
+						A showcase of my recent work, demonstrating expertise in full-stack
+						development and modern web technologies.
 					</motion.p>
 				</motion.div>
 
@@ -60,7 +63,8 @@ const Projects: React.FC = () => {
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.2 }}
-					className="grid md:grid-cols-3 gap-8">
+					className="grid md:grid-cols-3 gap-8"
+				>
 					{PROJECTS.map(
 						({
 							id,
@@ -77,7 +81,8 @@ const Projects: React.FC = () => {
 							<motion.div
 								key={id}
 								variants={cardVariants}
-								className="group focus-within:ring-2 focus-within:ring-blue-500 rounded-2xl">
+								className="group focus-within:ring-2 focus-within:ring-blue-500 rounded-2xl"
+							>
 								<div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg focus-within:border-blue-500/50">
 									{/* Project Image */}
 									<div className="relative h-48 overflow-hidden">
@@ -115,13 +120,9 @@ const Projects: React.FC = () => {
 													Key Features:
 												</p>
 												<ul className="text-sm text-slate-300 list-disc list-inside space-y-1">
-													{features.map(
-														(feature, i) => (
-															<li key={i}>
-																{feature}
-															</li>
-														),
-													)}
+													{features.map((feature, i) => (
+														<li key={i}>{feature}</li>
+													))}
 												</ul>
 											</div>
 										)}
@@ -142,7 +143,8 @@ const Projects: React.FC = () => {
 											{technologies.map((tech, index) => (
 												<span
 													key={index}
-													className="px-2 py-1 bg-slate-700 rounded text-xs">
+													className="px-2 py-1 bg-slate-700 rounded text-xs"
+												>
 													{tech}
 												</span>
 											))}
@@ -156,7 +158,8 @@ const Projects: React.FC = () => {
 													target="_blank"
 													rel="noopener noreferrer"
 													aria-label={`View source code for ${title}`}
-													className="flex items-center space-x-2 text-slate-400 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+													className="flex items-center space-x-2 text-slate-400 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+												>
 													<Github className="w-4 h-4" />
 													<span>Code</span>
 												</a>
@@ -167,7 +170,8 @@ const Projects: React.FC = () => {
 													target="_blank"
 													rel="noopener noreferrer"
 													aria-label={`View live demo of ${title}`}
-													className="flex items-center space-x-2 text-slate-400 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+													className="flex items-center space-x-2 text-slate-400 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+												>
 													<ExternalLink className="w-4 h-4" />
 													<span>Live Demo</span>
 												</a>

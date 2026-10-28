@@ -13,10 +13,7 @@ const cardVariants: Variants = {
 
 const Services: React.FC = () => {
 	return (
-		<section
-			id="skills"
-			aria-labelledby="services-heading"
-			className="py-20">
+		<section id="skills" aria-labelledby="services-heading" className="py-20">
 			<div className="container mx-auto px-6">
 				{/* Section header */}
 				<div className="text-center mb-16">
@@ -26,7 +23,8 @@ const Services: React.FC = () => {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.6 }}
-						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+						className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+					>
 						Tech Stack & Expertise{" "}
 					</motion.h2>
 					<motion.p
@@ -34,19 +32,17 @@ const Services: React.FC = () => {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ delay: 0.2, duration: 0.6 }}
-						className="text-xl text-slate-300 max-w-3xl mx-auto">
-						Technologies, tools, and development practices I use to
-						build scalable, responsive, and modern web applications.
+						className="text-xl text-slate-300 max-w-3xl mx-auto"
+					>
+						Technologies, tools, and development practices I use to build
+						scalable, responsive, and modern web applications.
 					</motion.p>
 				</div>
 
 				{/* Services grid */}
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{SERVICES.map(
-						(
-							{ id, title, description, icon: Icon, features },
-							index,
-						) => (
+						({ id, title, description, icon: Icon, features }, index) => (
 							<motion.article
 								key={id}
 								variants={cardVariants}
@@ -62,17 +58,16 @@ const Services: React.FC = () => {
 									},
 								}}
 								className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-blue-500/50 transition-colors duration-300"
-								aria-labelledby={`service-${id}`}>
+								aria-labelledby={`service-${id}`}
+							>
 								<div className="text-blue-400 mb-6 group-hover:text-blue-300 transition-colors duration-200">
-									<Icon
-										className="w-8 h-8"
-										aria-hidden="true"
-									/>
+									<Icon className="w-8 h-8" aria-hidden="true" />
 								</div>
 
 								<h3
 									id={`service-${id}`}
-									className="text-xl font-bold mb-4 group-hover:text-blue-400 transition-colors duration-200">
+									className="text-xl font-bold mb-4 group-hover:text-blue-400 transition-colors duration-200"
+								>
 									{title}
 								</h3>
 
@@ -83,7 +78,8 @@ const Services: React.FC = () => {
 									{features.map((feature) => (
 										<span
 											key={feature}
-											className="px-3 py-1 rounded-full bg-slate-700/50 border border-slate-600 text-sm text-slate-300">
+											className="px-3 py-1 rounded-full bg-slate-700/50 border border-slate-600 text-sm text-slate-300"
+										>
 											{feature}
 										</span>
 									))}
