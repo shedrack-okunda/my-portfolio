@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.2 }}
-					className="grid md:grid-cols-3 gap-8"
+					className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
 				>
 					{PROJECTS.map(
 						({
