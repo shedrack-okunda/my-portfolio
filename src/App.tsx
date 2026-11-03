@@ -5,15 +5,18 @@ import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Layout from "./layouts/Layout";
+import { Route, Routes } from "react-router-dom";
 
 const App: React.FC = () => {
 	return (
 		<Layout>
-			<Hero />
-			<About />
-			<Skills />
-			<Projects />
-			<Contact />
+			<Routes>
+				<Route path="/" element={<Hero />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/skills" element={<Skills />} />
+				<Route path="/projects" element={<Projects />} />
+				<Route path="/contact" element={<Contact />} />
+			</Routes>
 		</Layout>
 	);
 };

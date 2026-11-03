@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NAV_LINKS } from "../../config/navigation";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
 	const [currentSection, setCurrentSection] = useState("hero");
@@ -48,28 +49,28 @@ const Navbar: React.FC = () => {
 		>
 			<div className="container mx-auto px-2 py-2 flex items-center justify-between">
 				{/* Brand */}
-				<a
-					href="#home"
+				<Link
+					to="/"
 					className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
 				>
 					Sheddy
-				</a>
+				</Link>
 
 				{/* Desktop Menu */}
 				<div className="hidden md:flex items-center space-x-8">
-					{NAV_LINKS.map(({ id, label }) => (
-						<a
-							key={id}
-							href={`#${id}`}
+					{NAV_LINKS.map(({ path, label }) => (
+						<Link
+							key={label}
+							to={path}
 							className={`flex capitalize text-center font-semibold transition-colors duration-200 ${
-								currentSection === id
+								currentSection === path
 									? "text-blue-400"
 									: "text-white hover:text-blue-400"
 							}`}
-							aria-current={currentSection === id ? "page" : undefined}
+							aria-current={currentSection === path ? "page" : undefined}
 						>
 							{label}
-						</a>
+						</Link>
 					))}
 				</div>
 
@@ -95,20 +96,20 @@ const Navbar: React.FC = () => {
 					id="mobile-menu"
 					className="md:hidden mt-4 py-4 border-t border-t-purple-400 border-slate-800"
 				>
-					{NAV_LINKS.map(({ id, label }) => (
-						<a
-							key={id}
-							href={`#${id}`}
+					{NAV_LINKS.map(({ path, label }) => (
+						<Link
+							key={label}
+							to={path}
 							onClick={() => setIsMenuOpen(false)}
 							className={`block w-full font-medium text-left py-2 capitalize transition-colors duration-200 ${
-								currentSection === id
+								currentSection === path
 									? "text-blue-400"
 									: "text-white hover:text-blue-400"
 							}`}
-							aria-current={currentSection === id ? "page" : undefined}
+							aria-current={currentSection === path ? "page" : undefined}
 						>
 							{label}
-						</a>
+						</Link>
 					))}
 				</div>
 			)}
