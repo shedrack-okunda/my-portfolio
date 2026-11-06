@@ -1,90 +1,48 @@
-import type React from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { NAV_LINKS } from "../../config/navigation";
 import { SOCIAL_LINKS } from "../../config/socials";
-import { motion, type Variants } from "framer-motion";
-
-const containerVariants: Variants = {
-	hidden: {},
-	visible: {
-		transition: { staggerChildren: 0.1 },
-	},
-};
-
-const itemVariants: Variants = {
-	hidden: { opacity: 0, y: 20 },
-	visible: {
-		opacity: 1,
-		y: 0,
-		transition: { type: "spring", stiffness: 60, damping: 12 },
-	},
-};
 
 const Footer: React.FC = () => {
 	return (
-		<footer className="py-6 bg-slate-900 border-t border-slate-800">
+		<footer className="py-8 bg-slate-900 border-t border-slate-800">
 			<div className="container mx-auto px-6">
 				<motion.div
-					initial="hidden"
-					whileInView="visible"
-					viewport={{ once: true, amount: 0.2 }}
-					variants={containerVariants}
-					className="text-center"
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true }}
+					transition={{ duration: 0.5, ease: "easeOut" }}
+					className="flex flex-col items-center text-center max-w-2xl mx-auto"
 				>
-					{/* Name */}
-					<motion.h2
-						variants={itemVariants}
-						className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent "
-					>
+					{/* Name & Tagline */}
+					<h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
 						Shedrack Okunda
-					</motion.h2>
-
-					{/* Tagline */}
-					<motion.p variants={itemVariants} className="text-slate-400 mb-6">
+					</h2>
+					<p className="text-slate-400 text-sm mt-2 mb-6">
 						Building scalable web applications and crafting clean digital
-						experiences with purpose.{" "}
-					</motion.p>
+						experiences with purpose.
+					</p>
 
-					{/* Quick Navigation */}
-					<motion.div
-						variants={itemVariants}
-						className="flex flex-wrap justify-center gap-6 mb-6 text-sm"
+					{/* Quick Navigation with Icons */}
+					<nav
+						aria-label="Footer Navigation"
+						className="flex flex-wrap justify-center gap-6 mb-6"
 					>
-						<a
-							href="#home"
-							className="text-slate-400 hover:text-white transition"
-						>
-							Home
-						</a>
-						<a
-							href="#about"
-							className="text-slate-400 hover:text-white transition"
-						>
-							About
-						</a>
-						<a
-							href="#projects"
-							className="text-slate-400 hover:text-white transition"
-						>
-							Projects
-						</a>
-						<a
-							href="#skills"
-							className="text-slate-400 hover:text-white transition"
-						>
-							Skills
-						</a>
-						<a
-							href="#contact"
-							className="text-slate-400 hover:text-white transition"
-						>
-							Contact
-						</a>
-					</motion.div>
+						{NAV_LINKS.map(({ path, label, icon: Icon }) => (
+							<Link
+								key={label}
+								to={path}
+								className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors duration-200"
+							>
+								<Icon className="w-4 h-4 text-blue-400" />
+								<span>{label}</span>
+							</Link>
+						))}
+					</nav>
 
 					{/* Social Links */}
-					<motion.div
-						variants={itemVariants}
-						className="flex justify-center space-x-6 mb-6"
-					>
+					<div className="flex space-x-6 mb-6">
 						{SOCIAL_LINKS.map(({ id, href, icon: Icon, label }) => (
 							<motion.a
 								key={id}
@@ -94,17 +52,17 @@ const Footer: React.FC = () => {
 								rel="noopener noreferrer"
 								whileHover={{ scale: 1.15 }}
 								whileTap={{ scale: 0.95 }}
-								className="text-slate-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+								className="text-slate-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded p-1"
 							>
-								<Icon className="w-6 h-6" />
+								<Icon className="w-5 h-5" />
 							</motion.a>
 						))}
-					</motion.div>
+					</div>
 
 					{/* Copyright */}
-					<motion.p variants={itemVariants} className="text-slate-500 text-sm">
+					<p className="text-slate-500 text-xs">
 						© {new Date().getFullYear()} Shedrack Okunda. All Rights Reserved.
-					</motion.p>
+					</p>
 				</motion.div>
 			</div>
 		</footer>
